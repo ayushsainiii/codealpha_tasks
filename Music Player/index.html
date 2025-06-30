@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="player">
+    <h2 id="title">Title</h2>
+    <h4 id="artist">Artist</h4>
+
+    <audio id="audio" src="music/falak-tak.mp3"></audio>
+
+    <div class="controls">
+      <button id="prev">⏮️</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭️</button>
+    </div>
+
+    <div class="progress-container">
+      <span id="current-time">0:00</span>
+      <input type="range" id="progress" value="0" />
+      <span id="duration">0:00</span>
+    </div>
+
+    <div class="volume-container">
+      🔈 <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+    </div>
+
+    <ul id="playlist">
+      <li data-index="0">🎵 Falak Tak (Slowed + Reverb)</li>
+      <li data-index="1">🎵 Sidhu Moosewala x Shubh x Brown Munde Remix</li>
+      <li data-index="2">🎵 Dilbar - Tech Panda x Kenzani Remix</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
