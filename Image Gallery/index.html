@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>
+    Image Gallery</h1>
+
+  <div class="filters">
+    <button data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="architecture">Architecture</button>
+    <button data-filter="animals">Animals</button>
+  </div>
+
+  <div class="gallery">
+    <div class="image nature">
+      <img src="https://th.bing.com/th/id/OIP.dZyVwavMo6no10WxBE8GOgHaFj?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Nature 1">
+    </div>
+    <div class="image architecture">
+      <img src="https://th.bing.com/th/id/OIP.N6LlJKRVjT7Q0Hmhfkx-AAHaFj?rs=1&pid=ImgDetMain&cb=idpwebpc2" alt="Architecture 1">
+    </div>
+    <div class="image animals">
+      <img src="https://s1.1zoom.me/b5050/569/Dogs_Retriever_453707_1600x1200.jpg" alt="Animal 1">
+    </div>
+    <div class="image nature">
+      <img src="https://wallpapercave.com/wp/NRyGuz1.jpg" alt="Nature 2">
+    </div>
+    <div class="image animals">
+      <img src="https://c.wallhere.com/photos/f3/fd/1600x1200_px_animals-1655169.jpg!d" alt="Animal 2">
+    </div>
+    <div class="image architecture">
+      <img src="https://c.wallhere.com/photos/a2/ff/1600x1200_px_architecture-1197690.jpg!d" alt="Architecture 2">
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-nav">
+      <span id="prev">&#10094;</span>
+      <span id="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
